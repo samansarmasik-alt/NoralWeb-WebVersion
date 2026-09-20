@@ -1,0 +1,6 @@
+/target
+# Local runtime data (ephemeral on Render free tier)
+noral-model.json
+*.db
+# Secrets — use env vars (NIM_KEY, APINEX_KEY, …), never commit files
+*-key.txt

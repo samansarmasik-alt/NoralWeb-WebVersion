@@ -1,0 +1,12 @@
+[package]
+name = "noral-web-server"
+version = "0.33.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde-big-array = "0.5"
+ureq = { version = "2", default-features = false, features = ["tls"] }
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }

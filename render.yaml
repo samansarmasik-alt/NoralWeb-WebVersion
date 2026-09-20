@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: noralweb
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    # Free tier sleeps when idle — first query after sleep takes ~1 min.
+    envVars:
+      - key: NIM_KEY
+        sync: false
+      - key: APINEX_KEY
+        sync: false
+      - key: LANGSEARCH_KEY
+        sync: false
+      - key: BRAVE_KEY
+        sync: false
+      - key: EXA_KEY
+        sync: false
+      - key: TAVILY_KEY
+        sync: false
+      - key: SERPER_KEY
+        sync: false
